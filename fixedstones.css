@@ -2529,3 +2529,39 @@ a[onclick^="add_tag"]:hover {
   float: none !important;
   margin: 0 !important;
 }
+
+/*
+  FixedStones v9 torrent table category column
+  Hide category cells and left-align expanded torrent details.
+*/
+
+.torrent_table tr > .cats_col,
+.torrent_table tr.colhead > td.cats_col,
+.torrent_table tr.colhead_dark > td.cats_col {
+  display: none !important;
+}
+
+.torrent_table tr.group > td.center:first-child {
+  width: 50px !important;
+}
+
+.torrent_table tr.group > .big_info {
+  padding-left: 12px !important;
+}
+
+.torrent_table tr.group_torrent > td:first-child {
+  text-align: left !important;
+  padding-left: 62px !important;
+}
+
+.torrent_table tr.group_torrent > td:first-child > span,
+.torrent_table tr.group_torrent > td:first-child > a {
+  float: none !important;
+}
+
+.torrent_table tr.group_torrent > td:first-child span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 6px;
+}
