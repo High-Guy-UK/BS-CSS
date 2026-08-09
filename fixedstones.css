@@ -2289,3 +2289,106 @@ a[onclick^="add_tag"]:hover {
 #searchbars input:not([type]) {
   min-width: 0 !important;
 }
+
+/*
+  FixedStones v7 latest torrents card
+  Center the icon, hide the title text, make the pager horizontal.
+*/
+
+.latest_torrents {
+  height: auto !important;
+}
+
+.latest_torrents #image-container {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 18px 16px 8px !important;
+  text-align: center;
+}
+
+.latest_torrents #image-container .image:not(.link) {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
+.latest_torrents #image-container .image:not(.link) a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto !important;
+  max-width: 100%;
+  margin: 0 auto !important;
+}
+
+.latest_torrents #image-container .image:not(.link) img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 220px !important;
+  max-height: 220px !important;
+  margin: 0 auto !important;
+  object-fit: contain;
+}
+
+.latest_torrents #image-container .image.link {
+  display: none !important;
+}
+
+.latest_torrents #title-container {
+  position: static !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 16px 16px !important;
+}
+
+.latest_torrents #title-container .nobullet {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.latest_torrents .circle-title {
+  position: static !important;
+  display: inline-flex !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.latest_torrents .circle-title a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 5px !important;
+  color: #aeb8c2;
+  background: transparent !important;
+  border: 1px solid #2e3a45;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.latest_torrents .circle-title a:hover {
+  color: #e6eaed;
+  background: #1c252d !important;
+  border-color: #465563;
+}
