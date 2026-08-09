@@ -2606,3 +2606,59 @@ table.torrent_table:not(.details) tr.torrent_row > td:first-child > a {
   display: inline !important;
   text-align: left !important;
 }
+
+/*
+  FixedStones v11 torrent table overflow
+  Collapse category columns without breaking colspan layout and remove time hint boxes.
+*/
+
+table.torrent_table {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
+.torrent_table tr > .cats_col,
+.torrent_table tr.colhead > td.cats_col,
+.torrent_table tr.colhead_dark > td.cats_col {
+  display: table-cell !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+}
+
+.torrent_table tr > .cats_col > * {
+  display: none !important;
+}
+
+.torrent_table tr.group > .big_info {
+  padding-left: 10px !important;
+}
+
+table.torrent_table:not(.details) tr.group_torrent > td,
+table.torrent_table:not(.details) tr.torrent_row > td {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+table.torrent_table:not(.details) tr.group_torrent > td:first-child:not(.torrent_name):not(.big_info),
+table.torrent_table:not(.details) tr.torrent_row > td:first-child:not(.torrent_name):not(.big_info) {
+  padding-left: 52px !important;
+  padding-right: 10px !important;
+  white-space: normal !important;
+}
+
+.torrent_table .time.tooltip,
+.torrent_table span.time.tooltip,
+.torrent_table td.nobr .time.tooltip {
+  display: inline !important;
+  padding: 0 !important;
+  color: #aeb8c2 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
