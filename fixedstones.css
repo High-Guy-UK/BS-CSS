@@ -2707,3 +2707,107 @@ table.forum_index .time.tooltip,
   box-shadow: none !important;
   padding: 0 !important;
 }
+
+/*
+  FixedStones v13 forum status apples
+  Red apples for unread, green apples for read.
+*/
+
+table.forum_index td.read,
+table.forum_index td.read_sticky,
+table.forum_index td.read_locked,
+table.forum_index td.read_locked_sticky,
+table.forum_index td.read_unlocked,
+table.forum_index td.unread,
+table.forum_index td.unread_sticky,
+table.forum_index td.unread_locked,
+table.forum_index td.unread_locked_sticky,
+table.forum_index td.unread_unlocked,
+td.read.tooltip,
+td.read_sticky.tooltip,
+td.read_locked.tooltip,
+td.read_locked_sticky.tooltip,
+td.read_unlocked.tooltip,
+td.unread.tooltip,
+td.unread_sticky.tooltip,
+td.unread_locked.tooltip,
+td.unread_locked_sticky.tooltip,
+td.unread_unlocked.tooltip {
+  position: relative;
+  width: 34px !important;
+  min-width: 34px !important;
+  padding: 0 !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  background: #10171e !important;
+  border-right: 1px solid #26313b !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.015) !important;
+}
+
+table.forum_index td.read::before,
+table.forum_index td.read_sticky::before,
+table.forum_index td.read_locked::before,
+table.forum_index td.read_locked_sticky::before,
+table.forum_index td.read_unlocked::before,
+td.read.tooltip::before,
+td.read_sticky.tooltip::before,
+td.read_locked.tooltip::before,
+td.read_locked_sticky.tooltip::before,
+td.read_unlocked.tooltip::before,
+table.forum_index td.unread::before,
+table.forum_index td.unread_sticky::before,
+table.forum_index td.unread_locked::before,
+table.forum_index td.unread_locked_sticky::before,
+table.forum_index td.unread_unlocked::before,
+td.unread.tooltip::before,
+td.unread_sticky.tooltip::before,
+td.unread_locked.tooltip::before,
+td.unread_locked_sticky.tooltip::before,
+td.unread_unlocked.tooltip::before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 18px !important;
+  height: 18px !important;
+  margin: 0 auto !important;
+  vertical-align: middle;
+  background: #6ea061;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.4 2.4c-1.5.2-2.6 1-3.2 2.2-.3.6-.4 1.2-.3 1.7 1.4.1 2.7-.6 3.5-1.7.5-.7.7-1.5.6-2.2h-.6ZM11.8 7.1c-.7 0-1.3-.4-2.1-.7-.8-.4-1.6-.5-2.5-.2-1.5.4-2.7 1.7-3.1 3.6-.7 3.6 1.7 9.6 4.3 10.1.8.2 1.3-.3 2.2-.3.9-.1 1.4.4 2.3.3 2.5-.4 5.1-6.5 4.5-10-.3-1.8-1.5-3.2-3-3.7-.9-.3-1.8-.1-2.6.3-.7.3-1.3.6-2 .6Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M15.4 2.4c-1.5.2-2.6 1-3.2 2.2-.3.6-.4 1.2-.3 1.7 1.4.1 2.7-.6 3.5-1.7.5-.7.7-1.5.6-2.2h-.6ZM11.8 7.1c-.7 0-1.3-.4-2.1-.7-.8-.4-1.6-.5-2.5-.2-1.5.4-2.7 1.7-3.1 3.6-.7 3.6 1.7 9.6 4.3 10.1.8.2 1.3-.3 2.2-.3.9-.1 1.4.4 2.3.3 2.5-.4 5.1-6.5 4.5-10-.3-1.8-1.5-3.2-3-3.7-.9-.3-1.8-.1-2.6.3-.7.3-1.3.6-2 .6Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+table.forum_index td.unread::before,
+table.forum_index td.unread_sticky::before,
+table.forum_index td.unread_locked::before,
+table.forum_index td.unread_locked_sticky::before,
+table.forum_index td.unread_unlocked::before,
+td.unread.tooltip::before,
+td.unread_sticky.tooltip::before,
+td.unread_locked.tooltip::before,
+td.unread_locked_sticky.tooltip::before,
+td.unread_unlocked.tooltip::before {
+  background: #b45b60;
+}
+
+table.forum_index td.read::after,
+table.forum_index td.read_sticky::after,
+table.forum_index td.read_locked::after,
+table.forum_index td.read_locked_sticky::after,
+table.forum_index td.read_unlocked::after,
+td.read.tooltip::after,
+td.read_sticky.tooltip::after,
+td.read_locked.tooltip::after,
+td.read_locked_sticky.tooltip::after,
+td.read_unlocked.tooltip::after,
+table.forum_index td.unread::after,
+table.forum_index td.unread_sticky::after,
+table.forum_index td.unread_locked::after,
+table.forum_index td.unread_locked_sticky::after,
+table.forum_index td.unread_unlocked::after,
+td.unread.tooltip::after,
+td.unread_sticky.tooltip::after,
+td.unread_locked.tooltip::after,
+td.unread_locked_sticky.tooltip::after,
+td.unread_unlocked.tooltip::after {
+  content: none !important;
+  display: none !important;
+}
