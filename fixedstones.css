@@ -2565,3 +2565,44 @@ a[onclick^="add_tag"]:hover {
   gap: 6px;
   margin-right: 6px;
 }
+
+/*
+  FixedStones v10 torrent row alignment
+  Remove title highlight boxes and pin expanded versions to the left.
+*/
+
+.torrent_table tr.group .group_info > a.tooltip:first-child,
+.torrent_table tr.group .group_info > a.tooltip:first-child:hover,
+.torrent_table tr.group .group_info > a.tooltip:first-child:focus {
+  display: inline !important;
+  width: auto !important;
+  padding: 0 !important;
+  color: #d7dde1 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+table.torrent_table:not(.details) tr.group_torrent > td:first-child:not(.torrent_name):not(.big_info),
+table.torrent_table:not(.details) tr.torrent_row > td:first-child:not(.torrent_name):not(.big_info) {
+  text-align: left !important;
+  padding-left: 62px !important;
+}
+
+table.torrent_table:not(.details) tr.group_torrent > td:first-child > span:first-child,
+table.torrent_table:not(.details) tr.torrent_row > td:first-child > span:first-child {
+  float: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 6px;
+  margin-right: 6px;
+  text-align: left !important;
+}
+
+table.torrent_table:not(.details) tr.group_torrent > td:first-child > a,
+table.torrent_table:not(.details) tr.torrent_row > td:first-child > a {
+  float: none !important;
+  display: inline !important;
+  text-align: left !important;
+}
