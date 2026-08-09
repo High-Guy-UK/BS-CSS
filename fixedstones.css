@@ -2662,3 +2662,48 @@ table.torrent_table:not(.details) tr.torrent_row > td:first-child:not(.torrent_n
   border: 0 !important;
   box-shadow: none !important;
 }
+
+/*
+  FixedStones v12 remove global tooltip boxes
+  Stop tooltip-marked links/text from getting green rounded backgrounds.
+*/
+
+a.tooltip,
+span.tooltip,
+.tooltip:not(.tooltipster-default):not(.tooltipster-content),
+.time.tooltip,
+td .tooltip,
+tr .tooltip {
+  color: inherit !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+a.tooltip,
+span.tooltip,
+.time.tooltip {
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+a.tooltip:hover,
+a.tooltip:focus {
+  color: #e3e8eb !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.forum_index a.tooltip,
+.forum_index .time.tooltip,
+table.forum_index a.tooltip,
+table.forum_index .time.tooltip,
+#forums a.tooltip,
+#forums .time.tooltip {
+  color: #aeb8c2 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
