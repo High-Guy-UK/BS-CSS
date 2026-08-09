@@ -2151,3 +2151,110 @@ a[onclick^="add_tag"]:hover {
 #menu {
   bottom: 16px !important;
 }
+
+/*
+  FixedStones v5 header polish and adaptive columns
+  Plain utility links, aligned search boxes, fixed right sidebar.
+*/
+
+#userinfo > ul li a,
+#userinfo > ul li.brackets a,
+#userinfo_stats li,
+#userinfo_stats li span,
+#userinfo_stats li a {
+  color: #aeb8c2 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#userinfo > ul li a:hover,
+#userinfo > ul li a.active,
+#userinfo > ul li.brackets a:hover,
+#userinfo > ul li.brackets a.active,
+#userinfo_stats li:hover {
+  color: #e6eaed !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+#userinfo > ul li + li::before,
+#userinfo_stats li + li::before {
+  content: "/";
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  margin: 0 2px 0 -1px;
+  color: #46535f;
+  font-size: 0.7rem;
+}
+
+#userinfo > ul li,
+#userinfo_stats li {
+  display: inline-flex !important;
+  align-items: center;
+}
+
+#userinfo > ul li a,
+#userinfo > ul li.brackets a,
+#userinfo_stats li {
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+}
+
+#searchbar_artists {
+  display: none !important;
+}
+
+#searchbars > ul {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px !important;
+  align-items: center;
+  width: 100%;
+}
+
+#searchbars > ul > li {
+  display: block !important;
+  width: auto !important;
+  min-width: 0;
+}
+
+#searchbars form,
+#searchbars form ul,
+#searchbars form ul li {
+  width: 100%;
+}
+
+#searchbars input[type="text"],
+#searchbars input[type="search"],
+#searchbars input:not([type]) {
+  display: block !important;
+  width: 100% !important;
+}
+
+.sidebar {
+  width: 360px !important;
+  max-width: 360px;
+  margin-left: 28px !important;
+}
+
+.main_column {
+  width: calc(100% - 388px) !important;
+}
+
+#content > .sidebar + .main_column,
+#content > .main_column + .sidebar {
+  display: block;
+}
+
+@media (min-width: 1600px) {
+  .sidebar {
+    width: 380px !important;
+    max-width: 380px;
+  }
+
+  .main_column {
+    width: calc(100% - 408px) !important;
+  }
+}
